@@ -235,11 +235,11 @@ Large cards.
 
 "My son plays with AstroBot every day."
 
-—
+-
 
 "It feels alive."
 
-—
+-
 
 "Best robotics project I've ever owned."
 
@@ -332,7 +332,7 @@ Floating particles
 Scroll reveal animations
 Premium hover effects
 Glassmorphism cards
-Rounded corners (20–24px)
+Rounded corners (20-24px)
 Large product photography
 Soft blue glows
 Minimalistic icons

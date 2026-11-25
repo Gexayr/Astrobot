@@ -1,6 +1,6 @@
-# AstroBot — деплой
+# AstroBot - деплой
 
-Один контейнер `app` (Express) отдаёт и API (`/api/*`), и собранный лендинг. Рядом — PostgreSQL и одноразовый контейнер `migrate`, который синхронизирует схему БД. TLS и домен — на nginx хоста.
+Один контейнер `app` (Express) отдаёт и API (`/api/*`), и собранный лендинг. Рядом - PostgreSQL и одноразовый контейнер `migrate`, который синхронизирует схему БД. TLS и домен - на nginx хоста.
 
 ```
 браузер ──https──> nginx (хост, certbot) ──> 127.0.0.1:3000 ──> app:8080 ──> db:5432
@@ -20,7 +20,7 @@
 
 `pnpm --filter @workspace/astrobot run build` пререндерит `/`, `/privacy`, `/terms` в готовый HTML (`artifacts/astrobot/scripts/prerender.mjs`): свой title, description, canonical, JSON-LD (Product, FAQPage), а также `sitemap.xml` и `robots.txt`. Домен задаётся `SITE_URL` (по умолчанию `https://astrobot.amsoft.am`). Новую страницу нужно добавить в `routes` в prerender.mjs и в `pages` в `artifacts/api-server/src/app.ts`, иначе сервер отдаст 404.
 
-## Вариант 1 — Docker (рекомендуется)
+## Вариант 1 - Docker (рекомендуется)
 
 ```bash
 git clone git@github.com:Gexayr/Astrobot.git /var/www/astrobot && cd /var/www/astrobot
@@ -47,7 +47,7 @@ docker compose exec db psql -U astrobot -d astrobot -c "select * from preorders 
 docker compose exec -T db pg_dump -U astrobot astrobot | gzip > backup-$(date +%F).sql.gz
 ```
 
-## Вариант 2 — PM2 (без Docker)
+## Вариант 2 - PM2 (без Docker)
 
 Нужны Node 24, pnpm 10, PostgreSQL на хосте. В `.env` задать `DATABASE_URL`.
 
@@ -66,4 +66,4 @@ DATABASE_URL=postgres://... PORT=8080 pnpm --filter @workspace/api-server run de
 pnpm --filter @workspace/astrobot run dev                                          # сайт, /api проксируется на :8080
 ```
 
-После изменений в `lib/api-spec/openapi.yaml` — `pnpm --filter @workspace/api-spec run codegen`.
+После изменений в `lib/api-spec/openapi.yaml` - `pnpm --filter @workspace/api-spec run codegen`.
