@@ -22,7 +22,7 @@ const homeLd = [
     description:
       'AstroBot is an interactive, programmable AI robot toy for kids and makers. It walks, talks, dances, reacts to your voice and learns new tricks.',
     image: [`${SITE}/og-image.jpg`],
-    brand: { '@type': 'Brand', name: 'AstroBot' },
+    brand: { '@type': 'Brand', name: 'AstroBot', sameAs: 'https://www.instagram.com/astrobot22/' },
     category: 'Toys & Games > Toys > Robotic Toys',
     offers: {
       '@type': 'Offer',
@@ -42,6 +42,15 @@ const homeLd = [
     })),
   },
   { '@context': 'https://schema.org', '@type': 'WebSite', name: 'AstroBot', url: `${SITE}/` },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'AstroBot',
+    url: `${SITE}/`,
+    logo: `${SITE}/favicon.svg`,
+    email: 'privacy-astrobot@amsoft.am',
+    sameAs: ['https://www.instagram.com/astrobot22/'],
+  },
 ];
 
 const routes = [

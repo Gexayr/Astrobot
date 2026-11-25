@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'wouter';
 import { NewsletterForm } from './NewsletterForm';
-import { Bot, Twitter, Instagram, Youtube, Github } from 'lucide-react';
+import { Bot, Instagram } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -22,11 +22,15 @@ export const Footer = () => {
               Your companion. Your adventure. The world's smartest programmable AI robot toy.
             </p>
             <div className="flex items-center gap-4">
-              {[Twitter, Instagram, Youtube, Github].map((Icon, i) => (
-                <a key={i} href="#" className="text-white/40 hover:text-primary transition-colors">
-                  <Icon className="w-5 h-5" />
-                </a>
-              ))}
+              <a
+                href="https://www.instagram.com/astrobot22/"
+                target="_blank"
+                rel="noopener"
+                aria-label="AstroBot on Instagram"
+                className="flex items-center gap-2 text-white/40 hover:text-primary transition-colors text-sm"
+              >
+                <Instagram className="w-5 h-5" /> @astrobot22
+              </a>
             </div>
           </div>
 
