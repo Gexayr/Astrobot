@@ -1,0 +1,343 @@
+AstroBot Landing Page Prompt
+
+Create a premium, futuristic one-page landing page for AstroBot, a real interactive robot toy inspired by the PlayStation Astro Bot character (without using copyrighted PlayStation branding). The goal is to maximize pre-orders and showcase AstroBot as a premium AI-powered companion robot.
+
+Overall Style
+Premium Apple + Tesla product presentation
+Dark futuristic theme
+Black background (#05070A)
+Electric blue accents (#3B82F6)
+White typography
+Large spacing
+Rounded cards
+Soft glowing effects
+Smooth gradients
+Glassmorphism
+Premium animations
+Looks like a $10M startup product website
+
+The design should feel emotional, modern, playful, and highly polished.
+
+Hero Section
+
+Large 3D AstroBot standing on a glowing platform.
+
+Left side:
+
+Headline:
+
+Meet AstroBot
+The Robot That Comes to Life.
+
+Subtitle:
+
+More than a toy.
+AstroBot walks, talks, dances, reacts to your voice, learns new tricks, and becomes your smartest companion.
+
+Buttons:
+
+Primary:
+Pre-order Now
+
+Secondary:
+Watch Demo
+
+Below buttons:
+
+★★★★★
+Loved by kids, makers, and robot enthusiasts.
+
+Background:
+Stars
+Space atmosphere
+Soft particles
+Blue glowing circle behind robot
+
+Features Section
+
+Title:
+
+Why Everyone Loves AstroBot
+
+4 premium cards.
+
+Card 1
+
+🤖 Smart AI Companion
+
+Natural conversations
+
+Voice interaction
+
+Remembers commands
+
+Personality
+
+Card 2
+
+🎮 Endless Fun
+
+Dance modes
+
+Funny reactions
+
+Games
+
+Music
+
+Animations
+
+Card 3
+
+🧠 Programmable
+
+Arduino compatible
+
+Custom behaviors
+
+Developer SDK
+
+Educational
+
+Perfect for makers
+
+Card 4
+
+🛡 Safe & Durable
+
+Child friendly
+
+Rechargeable battery
+
+High quality materials
+
+Replaceable parts
+
+Product Showcase
+
+Large section with image gallery.
+
+Robot standing
+
+Walking
+
+Dancing
+
+Charging
+
+Kids playing
+
+Desktop setup
+
+360° product render
+
+Hover animations
+
+Lightbox gallery
+
+Video Section
+
+Large embedded video preview.
+
+Title:
+
+See AstroBot In Action
+
+Large play button.
+
+Background image showing AstroBot dancing.
+
+Technical Specifications
+
+Premium specification cards.
+
+Height
+
+Weight
+
+Battery life
+
+Charging
+
+Speaker
+
+Microphone
+
+WiFi
+
+Bluetooth
+
+Servo motors
+
+Camera
+
+Touch sensors
+
+IMU
+
+LED eyes
+
+USB-C charging
+
+ESP32 controller
+
+Arduino compatible
+
+Use Cases
+
+Grid layout.
+
+Learning robotics
+
+Programming
+
+Desk companion
+
+STEM education
+
+Home assistant
+
+Fun with family
+
+Gaming companion
+
+Gift idea
+
+Comparison Section
+
+AstroBot vs Traditional Toys
+
+Table.
+
+Rows:
+
+Interactive
+
+Programmable
+
+Voice Control
+
+AI
+
+Movement
+
+Updates
+
+Customization
+
+Battery
+
+Testimonials
+
+Large cards.
+
+★★★★★
+
+"My son plays with AstroBot every day."
+
+—
+
+"It feels alive."
+
+—
+
+"Best robotics project I've ever owned."
+
+Pricing
+
+Large premium pricing card.
+
+AstroBot
+
+Early Bird Price
+
+$199
+
+Original Price
+
+$249
+
+Included:
+
+Robot
+
+USB-C charger
+
+Developer Guide
+
+Mobile App
+
+1-year warranty
+
+CTA:
+
+Reserve Yours
+
+FAQ
+
+Accordion.
+
+How long does battery last?
+
+Can I program it?
+
+Is it safe for children?
+
+Does it work offline?
+
+How do updates work?
+
+Can I build accessories?
+
+Final CTA
+
+Large emotional section.
+
+Headline:
+
+Bring AstroBot Home Today
+
+Text:
+
+Join thousands of future owners and experience the next generation of interactive robotics.
+
+Buttons:
+
+Pre-order Now
+
+Contact Sales
+
+Footer
+
+Logo
+
+Navigation
+
+Social icons
+
+Newsletter
+
+Copyright
+
+Privacy
+
+Terms
+
+Design Requirements
+Responsive desktop/mobile
+Smooth scrolling
+Sticky transparent navbar
+Micro animations
+Floating particles
+Scroll reveal animations
+Premium hover effects
+Glassmorphism cards
+Rounded corners (20–24px)
+Large product photography
+Soft blue glows
+Minimalistic icons
+Apple-style typography
+High-end product presentation
+Professional startup aesthetic
+Every section should feel visually rich, with alternating layouts to avoid repetition.
+Focus on converting visitors into pre-orders with strong calls-to-action throughout the page.

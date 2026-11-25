@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "AstroBot Landing Page"
+version = "1.0.0"
+id = "artifacts/astrobot"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25482
+
+[services.development]
+run = "pnpm --filter @workspace/astrobot run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/astrobot", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/astrobot/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25482"
+BASE_PATH = "/"

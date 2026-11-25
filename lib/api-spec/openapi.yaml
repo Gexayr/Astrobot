@@ -10,6 +10,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: leads
+    description: Newsletter subscriptions and pre-orders
 paths:
   /healthz:
     get:
@@ -24,8 +26,109 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /subscribe:
+    post:
+      operationId: subscribe
+      tags: [leads]
+      summary: Subscribe to the newsletter
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/SubscribeRequest"
+      responses:
+        "201":
+          description: Subscribed (idempotent — repeat emails also return 201)
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OkResponse"
+        "400":
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+  /preorders:
+    post:
+      operationId: createPreorder
+      tags: [leads]
+      summary: Reserve an AstroBot (pre-order without payment)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PreorderRequest"
+      responses:
+        "201":
+          description: Pre-order created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PreorderResponse"
+        "400":
+          description: Invalid input
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
 components:
   schemas:
+    OkResponse:
+      type: object
+      properties:
+        ok:
+          type: boolean
+      required: [ok]
+    ErrorResponse:
+      type: object
+      properties:
+        error:
+          type: string
+      required: [error]
+    SubscribeRequest:
+      type: object
+      properties:
+        email:
+          type: string
+          pattern: '^[^\s@]+@[^\s@]+\.[^\s@]+$'
+          maxLength: 254
+      required: [email]
+    PreorderRequest:
+      type: object
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 120
+        email:
+          type: string
+          pattern: '^[^\s@]+@[^\s@]+\.[^\s@]+$'
+          maxLength: 254
+        phone:
+          type: string
+          maxLength: 40
+        country:
+          type: string
+          maxLength: 80
+        quantity:
+          type: integer
+          minimum: 1
+          maximum: 10
+        comment:
+          type: string
+          maxLength: 1000
+      required: [name, email, quantity]
+    PreorderResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        ok:
+          type: boolean
+      required: [id, ok]
     HealthStatus:
       type: object
       properties:
