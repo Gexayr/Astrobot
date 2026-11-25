@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'wouter';
 import { NewsletterForm } from './NewsletterForm';
 import { Bot, Twitter, Instagram, Youtube, Github } from 'lucide-react';
 
@@ -69,8 +70,8 @@ export const Footer = () => {
             © 2026 AstroBot. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-white/40 hover:text-white text-sm transition-colors">Privacy Policy</a>
-            <a href="#" className="text-white/40 hover:text-white text-sm transition-colors">Terms of Service</a>
+            <Link href="/privacy" className="text-white/40 hover:text-white text-sm transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="text-white/40 hover:text-white text-sm transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>

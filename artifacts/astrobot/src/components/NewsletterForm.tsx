@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'wouter';
 import { useSubscribe } from '@workspace/api-client-react';
 
 export const NewsletterForm = () => {
@@ -36,6 +37,10 @@ export const NewsletterForm = () => {
           {mutation.isPending ? '…' : 'Subscribe'}
         </button>
       </div>
+      <p className="text-[11px] leading-snug text-white/40">
+        By subscribing you agree to our{' '}
+        <Link href="/privacy" className="underline hover:text-white">Privacy Policy</Link>. Unsubscribe anytime.
+      </p>
       {mutation.isError && (
         <p className="text-xs text-red-400">Couldn't subscribe. Please check the email and try again.</p>
       )}

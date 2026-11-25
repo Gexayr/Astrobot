@@ -9,6 +9,7 @@ import {
   DialogTrigger,
 } from '@/components/ui/dialog';
 import { CheckCircle2 } from 'lucide-react';
+import { Link } from 'wouter';
 
 const inputCls =
   'w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2.5 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-primary/60';
@@ -89,6 +90,11 @@ export const PreorderDialog = ({ children }: { children: React.ReactNode }) => {
                     'Something went wrong. Please try again.'}
                 </p>
               )}
+              <p className="text-xs leading-relaxed text-white/45">
+                No payment is taken now and the reservation is not binding. By submitting you agree to our{' '}
+                <Link href="/terms" className="underline hover:text-white" onClick={() => setOpen(false)}>Terms</Link> and{' '}
+                <Link href="/privacy" className="underline hover:text-white" onClick={() => setOpen(false)}>Privacy Policy</Link>.
+              </p>
               <button
                 type="submit"
                 disabled={mutation.isPending}

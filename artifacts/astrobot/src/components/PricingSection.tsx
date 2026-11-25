@@ -57,7 +57,7 @@ export const PricingSection = () => {
               </PreorderDialog>
               
               <div className="mt-6 flex items-center justify-center gap-2 text-sm text-white/50">
-                <Shield className="w-4 h-4" /> Secure checkout. Cancel anytime before shipping.
+                <Shield className="w-4 h-4" /> No payment now. Cancel your reservation anytime.
               </div>
             </div>
 
