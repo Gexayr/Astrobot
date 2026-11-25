@@ -1,3 +1,28 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="180" height="180" rx="36" fill="#FF3C00"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f1b3d"/>
+      <stop offset="1" stop-color="#05070f"/>
+    </linearGradient>
+    <linearGradient id="helmet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#c9d4e6"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+  <!-- antenna -->
+  <rect x="30.5" y="7" width="3" height="9" rx="1.5" fill="#c9d4e6"/>
+  <circle cx="32" cy="7.5" r="4" fill="#3b82f6"/>
+  <!-- ears -->
+  <rect x="5" y="27" width="7" height="16" rx="3.5" fill="#3b82f6"/>
+  <rect x="52" y="27" width="7" height="16" rx="3.5" fill="#3b82f6"/>
+  <!-- helmet -->
+  <rect x="9" y="15" width="46" height="40" rx="18" fill="url(#helmet)"/>
+  <!-- visor -->
+  <rect x="14.5" y="22" width="35" height="25" rx="11" fill="#0a0f1f"/>
+  <!-- eyes -->
+  <circle cx="24.5" cy="34.5" r="5.5" fill="#3b82f6"/>
+  <circle cx="39.5" cy="34.5" r="5.5" fill="#3b82f6"/>
+  <circle cx="24.5" cy="34.5" r="2.6" fill="#93c5fd"/>
+  <circle cx="39.5" cy="34.5" r="2.6" fill="#93c5fd"/>
 </svg>

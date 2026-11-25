@@ -47,7 +47,7 @@ const homeLd = [
     '@type': 'Organization',
     name: 'AstroBot',
     url: `${SITE}/`,
-    logo: `${SITE}/favicon.svg`,
+    logo: `${SITE}/icon-512.png`,
     email: 'privacy-astrobot@amsoft.am',
     sameAs: ['https://www.instagram.com/astrobot22/'],
   },
