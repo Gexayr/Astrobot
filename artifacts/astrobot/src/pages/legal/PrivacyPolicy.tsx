@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
           </tr>
           <tr>
             <td>You reserve an AstroBot (pre-order)</td>
-            <td>Name, email, quantity and — if you choose to provide them — phone number, country and comment</td>
+            <td>Name, email, quantity and (if you choose to provide them) phone number, country and comment</td>
           </tr>
           <tr>
             <td>You visit the site</td>
@@ -48,25 +48,25 @@ export default function PrivacyPolicy() {
       </table>
       <p>
         We do <strong>not</strong> collect payment details: reservations are currently free and no payment is taken
-        on this website. We do not knowingly collect data from children — see section 9.
+        on this website. We do not knowingly collect data from children (see section 9).
       </p>
 
       <h2>3. Why we use it and on what legal basis</h2>
       <ul>
         <li>
-          <strong>Sending product news and launch updates</strong> — based on your consent. You can withdraw it at any
+          <strong>Sending product news and launch updates</strong>: based on your consent. You can withdraw it at any
           time (see section 7).
         </li>
         <li>
-          <strong>Handling your reservation</strong> — contacting you about availability, price, shipping and the
+          <strong>Handling your reservation</strong>: contacting you about availability, price, shipping and the
           final order. Legal basis: steps taken at your request before entering into a contract.
         </li>
         <li>
-          <strong>Keeping the site secure</strong> — rate-limiting and preventing spam or abuse. Legal basis: our
+          <strong>Keeping the site secure</strong>: rate-limiting and preventing spam or abuse. Legal basis: our
           legitimate interest in operating a safe service.
         </li>
         <li>
-          <strong>Meeting legal obligations</strong> — for example, accounting or responding to lawful requests from
+          <strong>Meeting legal obligations</strong>: for example, accounting or responding to lawful requests from
           authorities.
         </li>
       </ul>
@@ -85,14 +85,14 @@ export default function PrivacyPolicy() {
       <h2>5. Who we share data with</h2>
       <p>We never sell or rent personal data. We share it only with service providers that help us run the site:</p>
       <ul>
-        <li><strong>Hosting provider</strong> — stores the website and database on our behalf.</li>
+        <li><strong>Hosting provider</strong>: stores the website and database on our behalf.</li>
         <li>
-          <strong>Internal notification tools</strong> (e.g. Telegram) — used to notify our team about new
+          <strong>Internal notification tools</strong> (e.g. Telegram): used to notify our team about new
           reservations.
         </li>
-        <li><strong>Email provider</strong> — used to send you updates and reservation emails.</li>
+        <li><strong>Email provider</strong>: used to send you updates and reservation emails.</li>
         <li>
-          <strong>Shipping and payment partners</strong> — only once you place a final order, and only the data they
+          <strong>Shipping and payment partners</strong>: only once you place a final order, and only the data they
           need to deliver it.
         </li>
       </ul>
@@ -104,12 +104,12 @@ export default function PrivacyPolicy() {
 
       <h2>6. How long we keep it</h2>
       <ul>
-        <li><strong>Subscribers</strong> — until you unsubscribe.</li>
+        <li><strong>Subscribers</strong>: until you unsubscribe.</li>
         <li>
-          <strong>Reservations</strong> — until the reservation is fulfilled or cancelled, and then up to 24 months, or
+          <strong>Reservations</strong>: until the reservation is fulfilled or cancelled, and then up to 24 months, or
           longer if the law requires it (for example, for completed orders and invoices).
         </li>
-        <li><strong>Server logs</strong> — up to 30 days.</li>
+        <li><strong>Server logs</strong>: up to 30 days.</li>
       </ul>
 
       <h2>7. Your rights</h2>
@@ -124,7 +124,7 @@ export default function PrivacyPolicy() {
         <li>lodge a complaint with your local data protection authority.</li>
       </ul>
       <p>
-        To use any of these rights — including to unsubscribe or cancel a reservation — email <Mail />. Every update
+        To use any of these rights, including to unsubscribe or cancel a reservation, email <Mail />. Every update
         email also includes an unsubscribe link. We reply within 30 days.
       </p>
 

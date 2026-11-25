@@ -1,4 +1,4 @@
-// ⚠️ Fill these in before going live — they are shown on /privacy and /terms.
+// ⚠️ Fill these in before going live: they are shown on /privacy and /terms.
 export const LEGAL = {
   /** Legal name of the company or sole trader that runs the site */
   companyName: 'AstroBot',

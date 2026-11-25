@@ -10,7 +10,7 @@ import thumb6 from '@/assets/images/thumb-6.webp';
 import robotWaving from '@/assets/images/robot-waving.webp';
 
 const galleryImages = [
-  { src: thumb1, alt: 'AstroBot standing — front view' },
+  { src: thumb1, alt: 'AstroBot standing, front view' },
   { src: thumb2, alt: 'AstroBot in the lab' },
   { src: thumb3, alt: 'AstroBot at night' },
   { src: thumb4, alt: 'AstroBot close-up' },

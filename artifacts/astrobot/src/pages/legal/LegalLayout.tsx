@@ -7,7 +7,7 @@ export const LegalLayout = ({ title, children }: { title: string; children: Reac
   useEffect(() => {
     window.scrollTo(0, 0);
     const prev = document.title;
-    document.title = `${title} — ${LEGAL.siteName}`;
+    document.title = `${title} | ${LEGAL.siteName}`;
     return () => {
       document.title = prev;
     };

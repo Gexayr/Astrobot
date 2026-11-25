@@ -15,8 +15,13 @@ router.post("/subscribe", limiter, async (req, res) => {
     return;
   }
   const email = parsed.data.email.trim().toLowerCase();
-  await db.insert(subscribersTable).values({ email }).onConflictDoNothing();
+  const inserted = await db
+    .insert(subscribersTable)
+    .values({ email })
+    .onConflictDoNothing()
+    .returning({ id: subscribersTable.id });
   req.log.info("New subscriber");
+  if (inserted.length > 0) void notify(`📬 New AstroBot subscriber\n${email}`);
   res.status(201).json({ ok: true });
 });
 

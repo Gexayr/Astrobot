@@ -63,7 +63,7 @@ export const PreorderDialog = ({ children }: { children: React.ReactNode }) => {
             <DialogHeader>
               <DialogTitle className="text-2xl font-display">Reserve your AstroBot</DialogTitle>
               <DialogDescription>
-                Early Bird price $199. No payment now — we'll contact you before shipping.
+                Early Bird price $199. No payment now, we'll contact you before shipping.
               </DialogDescription>
             </DialogHeader>
             <form onSubmit={onSubmit} className="space-y-3 mt-2">

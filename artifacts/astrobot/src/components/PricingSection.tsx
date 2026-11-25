@@ -31,7 +31,7 @@ export const PricingSection = () => {
               <div className="mb-8">
                 <span className="text-2xl text-white/50 line-through mr-4">$249</span>
                 <span className="text-6xl font-display font-bold text-white">$199</span>
-                <p className="text-primary font-medium mt-2">Save $50 — Limited Time Offer</p>
+                <p className="text-primary font-medium mt-2">Save $50. Limited Time Offer</p>
               </div>
 
               <ul className="space-y-4 mb-10">
