@@ -10,12 +10,12 @@ import thumb6 from '@/assets/images/thumb-6.webp';
 import robotWaving from '@/assets/images/robot-waving.webp';
 
 const galleryImages = [
-  { src: thumb1, alt: 'AstroBot full body on its charging platform' },
-  { src: thumb2, alt: 'Close-up of AstroBot LED eyes' },
-  { src: thumb3, alt: 'AstroBot waving hello' },
-  { src: thumb4, alt: 'AstroBot retail box' },
-  { src: thumb5, alt: 'AstroBot pictured on the box' },
-  { src: thumb6, alt: 'AstroBot portrait' },
+  { src: thumb1, alt: 'AstroBot standing, front view' },
+  { src: thumb2, alt: 'AstroBot in the lab' },
+  { src: thumb3, alt: 'AstroBot at night' },
+  { src: thumb4, alt: 'AstroBot close-up' },
+  { src: thumb5, alt: 'AstroBot showing a hologram' },
+  { src: thumb6, alt: 'AstroBot ready for adventure' },
 ];
 
 export const GallerySection = () => {
