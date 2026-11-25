@@ -32,7 +32,7 @@ export const VideoSection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
               <img 
                 src={robotWaving} 
-                alt="Video Thumbnail" 
+                alt="AstroBot robot toy demo video" 
                 loading="lazy"
                 className="w-full h-full object-cover object-center opacity-70 group-hover:scale-105 transition-transform duration-1000"
               />

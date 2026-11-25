@@ -29,11 +29,11 @@ export const HeroSection = () => {
             
             <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] leading-[1.05] font-display font-bold mb-6 glow-text">
               Meet Astro<span className="text-primary">Bot</span> <br className="hidden md:block"/>
-              <span className="text-white/90">The Robot That Comes to Life.</span>
+              <span className="text-white/90">The AI Robot Toy That Comes to Life.</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl leading-relaxed">
-              More than a toy. AstroBot walks, talks, dances, reacts to your voice, learns new tricks, and becomes your smartest companion.
+              More than a toy. AstroBot is an interactive, programmable AI robot for kids and makers. It walks, talks, dances, reacts to your voice, learns new tricks, and becomes your smartest companion.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-10">
@@ -83,7 +83,7 @@ export const HeroSection = () => {
             <div className="relative z-10 w-full max-w-lg mx-auto transform hover:-translate-y-4 transition-transform duration-700">
               <img 
                 src={heroRobot} 
-                alt="AstroBot standing" 
+                alt="AstroBot AI robot toy for kids standing" 
                 className="w-full h-auto [mask-image:radial-gradient(closest-side,black_72%,transparent_100%)]"
                 fetchPriority="high"
                 width={1530}

@@ -2,7 +2,15 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 
-const faqs = [
+export const faqs = [
+  {
+    q: "What is AstroBot?",
+    a: "AstroBot is an interactive AI robot toy for kids, families and makers. It walks, talks, dances, reacts to your voice, learns new tricks and can be programmed with Arduino."
+  },
+  {
+    q: "How much does AstroBot cost?",
+    a: "The Early Bird pre-order price is $199 instead of the regular $249. You pay nothing now: we contact you before shipping to confirm your order."
+  },
   {
     q: "How long does the battery last?",
     a: "Up to 4 hours of continuous play. Charges in about 2 hours via the included USB-C cable."

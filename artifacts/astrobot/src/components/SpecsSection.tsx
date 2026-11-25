@@ -71,7 +71,7 @@ export const SpecsSection = () => {
             <div className="absolute inset-0 bg-primary/10 rounded-full blur-[100px] pointer-events-none" />
             <img 
               src={productBox} 
-              alt="AstroBot retail box"
+              alt="AstroBot robot toy retail box"
               loading="lazy" 
               className="w-full max-w-xl mx-auto relative z-10 rounded-2xl drop-shadow-[0_0_30px_rgba(59,130,246,0.3)]"
             />

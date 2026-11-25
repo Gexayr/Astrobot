@@ -91,7 +91,7 @@ export const GallerySection = () => {
               animate={{ scale: 1 }}
               exit={{ scale: 0.9 }}
               src={selectedImage}
-              alt="Enlarged view"
+              alt="AstroBot robot toy, enlarged view"
               className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             />

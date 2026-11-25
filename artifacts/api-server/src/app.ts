@@ -62,18 +62,34 @@ if (staticDir && fs.existsSync(path.join(staticDir, "index.html"))) {
       maxAge: "1y",
     }),
   );
-  app.use(express.static(staticDir, { maxAge: "1h", index: false }));
-  app.get("/{*splat}", (_req, res) => {
+  app.use(express.static(staticDir, { maxAge: "1h", index: false, redirect: false }));
+  // Prerendered pages (artifacts/astrobot/scripts/prerender.mjs); anything else is a real 404
+  // so search engines don't index random URLs as copies of the home page.
+  const pages: Record<string, string> = {
+    "/": "index.html",
+    "/privacy": "privacy/index.html",
+    "/terms": "terms/index.html",
+  };
+  app.get("/{*splat}", (req, res) => {
+    const key = req.path.length > 1 ? req.path.replace(/\/+$/, "") : req.path;
+    const page = pages[key];
     res.setHeader("Cache-Control", "no-cache");
-    res.sendFile(path.join(staticDir, "index.html"));
+    if (!page) res.status(404);
+    res.sendFile(path.join(staticDir, page ?? "index.html"));
   });
   logger.info({ staticDir }, "Serving static frontend");
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 app.use((err: unknown, req: Request, res: Response, _next: NextFunction) => {
-  req.log.error({ err }, "Unhandled error");
   if (res.headersSent) return;
+  // Malformed JSON / oversized body from express.json(): client error, not a 500.
+  const status = (err as { status?: number; type?: string })?.status;
+  if (typeof status === "number" && status >= 400 && status < 500) {
+    res.status(status).json({ error: status === 413 ? "Request too large" : "Invalid request body" });
+    return;
+  }
+  req.log.error({ err }, "Unhandled error");
   res.status(500).json({ error: "Internal server error" });
 });
 

@@ -16,6 +16,10 @@
 
 Лимит: 10 запросов / 10 мин с одного IP. Если заданы `TELEGRAM_BOT_TOKEN` и `TELEGRAM_CHAT_ID`, о каждом предзаказе приходит сообщение в Telegram.
 
+## SEO
+
+`pnpm --filter @workspace/astrobot run build` пререндерит `/`, `/privacy`, `/terms` в готовый HTML (`artifacts/astrobot/scripts/prerender.mjs`): свой title, description, canonical, JSON-LD (Product, FAQPage), а также `sitemap.xml` и `robots.txt`. Домен задаётся `SITE_URL` (по умолчанию `https://astrobot.amsoft.am`). Новую страницу нужно добавить в `routes` в prerender.mjs и в `pages` в `artifacts/api-server/src/app.ts`, иначе сервер отдаст 404.
+
 ## Вариант 1 — Docker (рекомендуется)
 
 ```bash

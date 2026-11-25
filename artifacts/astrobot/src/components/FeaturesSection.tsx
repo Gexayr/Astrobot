@@ -79,7 +79,7 @@ export const FeaturesSection = () => {
           </motion.h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Packed with advanced technology, but designed for pure enjoyment. 
-            AstroBot bridges the gap between sophisticated robotics and accessible fun.
+            AstroBot is the smart robot toy that bridges the gap between sophisticated robotics and accessible fun.
           </p>
         </div>
 

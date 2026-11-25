@@ -5,7 +5,7 @@ export const LEGAL = {
   /** Registered address (street, city, country) */
   companyAddress: '[Company address]',
   /** Inbox for privacy requests and general questions */
-  contactEmail: 'privacy@astrobot.example',
+  contactEmail: 'privacy-astrobot@amsoft.am',
   /** Country whose law governs the Terms */
   governingLaw: '[Country]',
   /** Bump this whenever the text changes */

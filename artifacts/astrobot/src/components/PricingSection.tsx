@@ -66,7 +66,7 @@ export const PricingSection = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-transparent rounded-full blur-3xl" />
               <img 
                 src={robotCta} 
-                alt="AstroBot"
+                alt="AstroBot AI robot toy"
                 loading="lazy" 
                 className="w-full max-w-[300px] md:max-w-md object-contain relative z-10 drop-shadow-2xl rounded-3xl [mask-image:radial-gradient(ellipse_at_center,black_55%,transparent_100%)]"
               />
