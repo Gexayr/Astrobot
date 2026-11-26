@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'wouter';
 import { useSubscribe } from '@workspace/api-client-react';
+import { track } from '@/lib/analytics';
 
 export const NewsletterForm = () => {
   const [email, setEmail] = useState('');
@@ -15,7 +16,10 @@ export const NewsletterForm = () => {
       className="flex flex-col gap-2"
       onSubmit={(e) => {
         e.preventDefault();
-        mutation.mutate({ data: { email: email.trim() } });
+        mutation.mutate(
+          { data: { email: email.trim() } },
+          { onSuccess: () => track('newsletter-subscribed', true) },
+        );
       }}
     >
       <div className="flex gap-2">

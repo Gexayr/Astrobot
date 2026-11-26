@@ -1,7 +1,9 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
-import { Route, Switch, Router as WouterRouter } from 'wouter';
+import { useEffect, useRef } from 'react';
+import { Route, Switch, Router as WouterRouter, useLocation } from 'wouter';
+import { track } from './lib/analytics';
 
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
@@ -56,6 +58,17 @@ function NotFound() {
 }
 
 function Router() {
+  const [location] = useLocation();
+  const first = useRef(true);
+  useEffect(() => {
+    // count.js records the first page load itself; count in-app navigations here.
+    if (first.current) {
+      first.current = false;
+      return;
+    }
+    track(location);
+  }, [location]);
+
   return (
     <Switch>
       <Route path="/" component={LandingPage} />

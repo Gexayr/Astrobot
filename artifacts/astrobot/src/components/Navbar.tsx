@@ -73,6 +73,7 @@ export const Navbar = () => {
             onClick={(e) => scrollTo(e, '#pricing')}
             className="px-6 py-2.5 rounded-full bg-primary text-primary-foreground font-semibold text-sm hover:glow-blue transition-all"
             data-testid="button-preorder-nav"
+            data-track="click-preorder-nav"
           >
             Pre-Order Now
           </a>
@@ -109,6 +110,7 @@ export const Navbar = () => {
             <a
               href="#pricing"
               onClick={(e) => scrollTo(e, '#pricing')}
+              data-track="click-preorder-nav-mobile"
               className="w-full text-center py-3 rounded-full bg-primary text-primary-foreground font-semibold text-lg hover:glow-blue transition-all"
             >
               Pre-Order Now

@@ -41,6 +41,7 @@ export const HeroSection = () => {
                 href="#pricing"
                 className="w-full sm:w-auto px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:bg-primary/90 glow-blue transition-all flex items-center justify-center gap-2"
                 data-testid="button-preorder-hero"
+                data-track="click-preorder-hero"
               >
                 Pre-Order Now
               </a>

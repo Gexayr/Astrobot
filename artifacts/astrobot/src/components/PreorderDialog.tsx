@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useCreatePreorder } from '@workspace/api-client-react';
+import { track } from '@/lib/analytics';
 import {
   Dialog,
   DialogContent,
@@ -34,7 +35,12 @@ export const PreorderDialog = ({ children }: { children: React.ReactNode }) => {
           comment: str('comment'),
         },
       },
-      { onSuccess: (res) => setDoneId(res.id) },
+      {
+        onSuccess: (res) => {
+          setDoneId(res.id);
+          track('preorder-submitted', true);
+        },
+      },
     );
   };
 

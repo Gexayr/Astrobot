@@ -51,7 +51,7 @@ export const PricingSection = () => {
               </ul>
 
               <PreorderDialog>
-                <button className="w-full py-5 rounded-2xl bg-primary text-primary-foreground font-bold text-xl hover:bg-primary/90 glow-blue transition-all transform hover:-translate-y-1" data-testid="button-checkout">
+                <button className="w-full py-5 rounded-2xl bg-primary text-primary-foreground font-bold text-xl hover:bg-primary/90 glow-blue transition-all transform hover:-translate-y-1" data-testid="button-checkout" data-track="click-reserve-dialog">
                   Reserve Yours Now →
                 </button>
               </PreorderDialog>

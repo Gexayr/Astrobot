@@ -22,6 +22,7 @@ export const CTASection = () => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a 
               href="#pricing"
+              data-track="click-preorder-cta"
               className="w-full sm:w-auto px-10 py-5 rounded-full bg-primary text-primary-foreground font-bold text-xl hover:bg-primary/90 glow-blue transition-all"
             >
               Pre-Order Now
