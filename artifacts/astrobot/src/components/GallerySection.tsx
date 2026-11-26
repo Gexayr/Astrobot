@@ -12,8 +12,8 @@ import robotWaving from '@/assets/images/robot-waving.webp';
 const galleryImages = [
   { src: thumb1, alt: 'AstroBot standing, front view' },
   { src: thumb2, alt: 'AstroBot in the lab' },
-  { src: thumb3, alt: 'AstroBot at night' },
-  { src: thumb4, alt: 'AstroBot close-up' },
+  { src: thumb3, alt: 'AstroBot in the electronics workshop' },
+  { src: thumb4, alt: 'AstroBot on the workbench' },
   { src: thumb5, alt: 'AstroBot showing a hologram' },
   { src: thumb6, alt: 'AstroBot ready for adventure' },
 ];
