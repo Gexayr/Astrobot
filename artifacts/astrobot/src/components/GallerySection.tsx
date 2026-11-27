@@ -14,8 +14,8 @@ const galleryImages = [
   { src: thumb2, alt: 'AstroBot in the lab' },
   { src: thumb3, alt: 'AstroBot in the electronics workshop' },
   { src: thumb4, alt: 'AstroBot on the workbench' },
-  { src: thumb5, alt: 'AstroBot showing a hologram' },
-  { src: thumb6, alt: 'AstroBot ready for adventure' },
+  { src: thumb5, alt: 'AstroBot greeting with open hands' },
+  { src: thumb6, alt: 'AstroBot at the repair bench' },
 ];
 
 export const GallerySection = () => {
